@@ -17,17 +17,6 @@
                     <h5 class="card-title">{{ $buku->judul_buku }}</h5>
                     <p class="card-text">Sinopsis : {{ $buku->sinopsis_buku }}</p>
                     <p class="card-text">Status : {{ $buku->status }}</p>
-                    <a href="{{ url('author/authordetail/' . $buku->id_buku) }}"><input type="submit" name="btnDetail"
-                            id="btnDetail" value="Detail" class="btn btn-primary"></a>
-                    <a href="{{ url('author/authorupdate/' . $buku->id_buku) }}"><input type="submit" name="btnUpdate"
-                            id="btnUpdate" value="Update" class="btn btn-primary"></a>
-                    @if ($buku->status == 'Ready Stock')
-                        <input type="button" name="btnNonActive" id="btnNonActive" value="Non-Active"
-                            class="btn btn-danger" onclick="nonaktifkan({{ $buku->id_buku }})">
-                    @else
-                        <input type="button" name="btnActive" id="btnActive" value="Active" class="btn btn-success"
-                            onclick="aktifkan({{ $buku->id_buku }})">
-                    @endif
                 </div>
             </div>
         </div>

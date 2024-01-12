@@ -6,6 +6,7 @@ use App\Models\Buku;
 use Illuminate\Http\Request;
 use App\Models\Roles;
 use App\Models\Users;
+use App\Models\NonBuku;
 use App\Models\lamaran;
 use App\Models\Transaksi;
 use App\Models\trans_saldo;
